@@ -1,22 +1,18 @@
 <template>
-  <div class="max-w-screen-md m-auto">
+  <NavBar />
+  <div class="max-w-screen-md m-auto py-10">
     <router-view></router-view>
   </div>
 </template>
 
 <script lang="ts">
-import { log } from '@fullstory/browser';
-import { ref } from 'vue';
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-import { getProducts } from './services/product';
-import ProductCard from './components/ProductCard.vue';
+import NavBar from './components/NavBar.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
-    ProductCard,
+    NavBar,
   },
   setup() {},
 });
@@ -24,11 +20,8 @@ export default defineComponent({
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: SF, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
