@@ -4,7 +4,11 @@ import App from './App.vue';
 import router from './router';
 import './index.css';
 
-FullStory.init({ orgId: import.meta.env.VITE_APP_FULLSTORY_ORG as string });
+try {
+  FullStory.init({ orgId: import.meta.env.VITE_APP_FULLSTORY_ORG as string });
+} catch (err) {
+  console.error('FullStory failed to initialize');
+}
 
 const app = createApp(App);
 
