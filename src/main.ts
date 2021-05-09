@@ -8,6 +8,7 @@ try {
   FullStory.init({ orgId: import.meta.env.VITE_APP_FULLSTORY_ORG as string });
 } catch (err) {
   console.error('FullStory failed to initialize');
+  console.error(err);
 }
 
 const app = createApp(App);
@@ -16,4 +17,4 @@ app.use(router);
 
 app.config.globalProperties.$FullStory = FullStory;
 
-createApp(App).mount('#app');
+app.mount('#app');

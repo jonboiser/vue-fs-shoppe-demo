@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="max-w-screen-md m-auto">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script lang="ts">
+import { log } from '@fullstory/browser';
+import { ref } from 'vue';
 import { defineComponent } from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
+import { getProducts } from './services/product';
+import ProductCard from './components/ProductCard.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
     HelloWorld,
+    ProductCard,
   },
+  setup() {},
 });
 </script>
 
