@@ -1,4 +1,10 @@
-# Vue 3 + Typescript + Vite
+# Vue 3 + Typescript + Vite + Fullstory App
+
+This is a work in progress
+
+<img width="1159" alt="Screen Shot 2021-05-10 at 1 36 13 AM" src="https://user-images.githubusercontent.com/10248067/117630638-417a1b00-b130-11eb-9d40-4117c29b07ee.png">
+
+# Initial Readme from Vite:
 
 This template should help get you started developing with Vue 3 and Typescript in Vite.
 
